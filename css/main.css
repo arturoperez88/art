@@ -1,0 +1,554 @@
+/**********global Selectors*********/
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body{
+font-family: 'Oswald', sans-serif;;
+}
+
+/* WON BE USING THIS FOR NOW
+.fly-in-text{
+  list-style: none;
+  position: absolute;
+  left: 35%;
+  top:30%;
+  transform: translateX(-20%) translateY(-50%);
+  -webkit-transform: translateX(-20%) translateY(-50%);
+  -moz-transform: translateX(-20%) translateY(-50%);
+  -o-transform: translateX(-20%) translateY(-50%);
+}
+
+.fly-in-text li{
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 16px;
+  color: white;
+  opacity: 1;
+  transition: all 4s ease;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2.5s ease;
+  -o-transition: all 2.5s ease;
+}
+
+.fly-in-text li:last-child{
+  margin-right: 0px;
+}
+.fly-in-text .hidden li{
+  opacity: 0;
+}
+ .hidden li:nth-child(1){
+  transform: translateY(-200px) ;
+  -webkit-transform:scale(.01)rotate(720deg) translateX(2000px);
+  -moz-transform:translateX(-200px) translateY(-200px);
+  -o-transform:translateX(-200px) translateY(-200px);
+  }
+ .hidden li:nth-child(2){
+  transform:translateX(-20px) translateY(-100px) ; 
+ -webkit-transform:translateX(-20px) translateY(1000px) scale(.04); 
+  -moz-transform:translateX(-20px) translateY(-100px); 
+  -o-transform:translateX(-20px) translateY(-100px); 
+}
+.hidden li:nth-child(3){
+  transform:translateX(-150px) translateY(-30px) ;
+   -webkit-transform:translateX(-150px) scale(.04) translateY(3000px);
+  -moz-transform:translateX(-150px) translateY(-30px);
+  -o-transform:translateX(-150px) translateY(-30px);
+}
+ .hidden li:nth-child(4){
+  transform:translateX(-10px) translateY(-200px) ; 
+ -webkit-transform: scale(.01)rotate(720deg) translateX(1000px) ;
+  -moz-transform:translateX(-10px) translateY(-200px); 
+  -o-transform:translateX(-10px) translateY(-200px); 
+}
+.hidden li:nth-child(5){
+  transform:translateX(-300px) translateY(-100px) ; 
+ -webkit-transform:translateX(150px) translateY(1000px) scale(.04); 
+  -moz-transform:translateX(-300px) translateY(-100px); 
+  -o-transform:translateX(-300px) translateY(-100px); 
+}
+ .hidden li:nth-child(6){
+  transform:translateX(-40px)  ; 
+ -webkit-transform:scale(.01)rotate(720deg) translateY(1200px);
+  -moz-transform:translateX(-40px) translateY(-120px);
+  -o-transform:translateX(-40px) translateY(-120px);
+}
+ .hidden li:nth-child(7){
+  transform:translateX(-200px) translateY(-200px);
+ -webkit-transform:translateX(-200px) translateY(2000px) scale(.04);
+  -moz-transform:translateX(-200px) translateY(-200px);
+  -o-transform:translateX(-200px) translateY(-200px);
+   } WONT BE USING THIS FOR NOW */
+
+/**********Mobile Header Area*********/
+
+header{
+	width: 100%;
+  background: #181818;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	position: fixed;
+	z-index: 2;
+}
+
+/**************HamBurger Menu Code*****************
+**************************************************/
+
+.bun{
+ width: 40px;
+ height: 30px;
+ margin: 5px 0px;
+ display: inline-block;
+ position: relative;
+ top: 6px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.meat{
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  border-radius: 8px;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.meat:nth-child(1){
+	top: 0px;
+}
+
+.meat:nth-child(2){
+	top: 12px;
+}
+
+.meat:nth-child(3){
+	top: 24px;
+}
+
+/*//////////The .exit class is called out in Jquery///////*/
+
+.exit div:nth-child(1){
+	top: 14px;
+  -webkit-transform: rotate(405deg);
+  -moz-transform: rotate(405deg);
+  -o-transform: rotate(405deg);
+  transform: rotate(405deg);
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.exit div:nth-child(2){
+	 opacity: 0;
+  left: -60px;
+}
+
+.exit div:nth-child(3){
+  top: 14px;
+  -webkit-transform: rotate(-405deg);
+  -moz-transform: rotate(-405deg);
+  -o-transform: rotate(-405deg);
+  transform: rotate(-405deg);
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+/****************************END of Hambuger Coade **********e****************
+******************************************************************************/
+
+.menu-opt{
+  letter-spacing: 6px;
+  line-height: 12px;
+  font-weight: 100;
+  font-size: 16px;
+  color: white; 
+}
+
+.hide{
+  display: none;
+}
+
+ul .li-items a{
+text-decoration: none;
+color: #ccc;
+cursor: pointer;
+letter-spacing: 8px;
+line-height: 16px;
+font-weight: 400;
+font-size: 12px;
+padding: 5px;
+}
+
+ul .li-items a:hover{
+  border-bottom:solid 2px #0080ff;
+}
+
+.li-items{
+	margin: 15px 10px;
+	list-style-type: none;
+}
+
+#sub-header{
+  background-color:#181818;
+  width: 100%;
+  z-index: 1;
+}
+
+.transparent{
+  text-align: center;
+  position: relative;
+  top: 45%;
+  padding: 20px 10px;
+}
+
+.logo{
+  padding: 10px 0px;
+  letter-spacing: 8px;
+  font-weight: 200;
+  color: #ccc;
+}
+
+.logo-tagline{
+  margin: 10px 0px;
+  letter-spacing: 6px;
+  line-height: 12px;
+  font-size: 12px; 
+  color: #ccc; 
+}
+
+ span{
+  color: #0080ff;
+  font-weight: bold;
+}
+
+/*********** Mobile Main Contant Area**********/
+
+main{
+	z-index:1;
+  text-align: center;
+  background-color: #181818;
+}
+
+#about-wrapper{
+  text-align: center;
+  padding: 25px;
+}
+
+.title{
+  text-align: center;
+  color: #0080ff;
+  padding: 10px;
+  line-height: 20px;
+ letter-spacing: 4px;
+ font-weight: 400;
+}
+
+.about-content{
+  font-size: 16px;  
+  line-height: 24px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  color: #ccc;
+  padding-bottom: 20px;
+}
+
+.contact{
+  text-decoration: none;
+  color: #0080ff;
+}
+
+#projects-wrapper{
+  padding: 50px 25px; 
+}
+
+.project{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  margin:40px 0px;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+
+.project-name{
+  padding: 10px 0px;
+  color: #ccc;
+  font-weight: 400;
+  letter-spacing: 2px;
+  border-top:solid 2px white;
+  transition:.5s;
+}
+
+.border-radius{
+    border-radius: 25px;
+    transition: .5s;
+}
+
+img{
+  width: 100%;
+  max-height: 300px;
+  padding-top: 20px;
+  display: none;
+}
+
+.project-disc{
+  color: #ccc;
+  padding: 10px 0px;
+  line-height: 24px;
+  display: none;
+  letter-spacing: .5px;
+}
+
+.buttons{
+  display: none;
+}
+
+
+.buttons a{
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+ color: #181818;
+  background: #0080ff;
+  width: 200px;
+  padding: 10px 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration:none;
+  font-weight: 700;
+}
+
+.buttons a:hover{
+ color: #ccc;
+  transition: .8s;
+}
+
+/*********** Mobile Footer Area**********/
+footer{
+  width: 100%;
+}
+
+#contact-wrapper{
+  text-align: center;
+  padding: 20px 0px;
+  width: 100%;
+  color: white;
+  background-color: #181818;
+}
+
+.icon{
+  fill:  #0080ff;
+}
+
+.svg-icons{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding:10px;
+}
+.svg-icons li{
+display: inline-block;
+border-radius:30px;
+width: 45px;
+height: 45px;
+}
+
+.svg-icons li:hover{
+ border-radius: 40px ;
+  transition: 1s; 
+}
+
+.icon:hover{
+  fill:#ccc;
+  transition: 1s;
+}
+
+@media screen and (min-width: 768px){  /*********** Tablet Layout**********/
+
+/*********** Tablet Header Area**********/
+body{
+    background: url("../images/study.jpg") no-repeat center center fixed  ;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+  header{
+     height: 60px;
+     display: flex;
+     justify-content: space-around;
+     flex-direction: column;
+  }
+  #sub-header{
+      background: #181818;
+      opacity: .8;
+  }
+  .logo, .logo-tagline{
+    color: white;
+  }
+
+.bun{
+  display: none;
+}
+
+.menu{
+  display:initial;
+ }
+
+ .menu ul {
+  display:flex;
+  justify-content: space-around;
+ }
+
+.menu ul li a{
+  font-size: 18px;
+}
+
+.logo{
+  letter-spacing: 16px;
+   font-size: 30px;
+}
+
+.logo-tagline{
+   font-size: 16px;
+    letter-spacing: 14px;
+    line-height: 30px;
+}
+
+/*********** Tablet Main Contant Area**********/
+
+.about-content{
+  font-size: 22px;
+  letter-spacing: 3px;
+  line-height: 30px;
+  padding: 10px 40px 30px;
+}
+
+.contact{
+  font-size: 18px;
+}
+
+img{
+  display: initial;
+  height: 200px
+}
+.project-name{
+  border-radius: 25px;
+}
+.project-disc{
+  padding: 20px 0px 0px;
+  display: initial;
+  height: 225px;
+}
+.buttons{
+  margin-top:10px; 
+  display: initial;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project{
+  width: 45%;
+  padding: 20px;
+}
+
+
+/*********** Tablet Footer Area**********/
+
+.svg-icons li{
+border-radius:40px;
+width: 55px;
+height: 55px;
+}
+
+}
+@media screen and (min-width: 1024px){ /*********** Laptop/Desktop Layout**********/
+
+/*********** Laptop/Desktop Main Content**********/
+.about-content{
+  padding:40px 100px; 
+}
+#project-wrapper{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+  .project{
+  width: 30%;
+}
+
+
+}
+
+@media screen and (min-width: 1100px){/*********** Media queries for layout fix**********/
+
+.project-disc{
+ height:300px;
+}
+
+}
+
+@media screen and (min-width: 1280px){/*********** Media queries for layout fix**********/
+.about-content{
+  padding-right: 200px;
+  padding-left: 200px;
+}
+  .project{
+  width: 25%;
+}
+.project-disc{
+ height:250px;
+}
+
+}
+
+@media screen and (min-width: 1380px){/*********** Media queries for layout fix**********/
+
+.project-disc{
+ height:200px;
+}
+img{
+ height:300px;
+}
+
+}
