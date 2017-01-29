@@ -97,7 +97,7 @@ font-family: 'Oswald', sans-serif;;
 
 header{
 	width: 100%;
-  background: #181818;
+  background: black;
 	color: white;
 	padding: 10px;
 	text-align: center;
@@ -115,6 +115,7 @@ header{
  display: inline-block;
  position: relative;
  top: 6px;
+ left: 40%;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -138,10 +139,10 @@ header{
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: 1s ease-in-out;
-  -moz-transition: 1s ease-in-out;
-  -o-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .meat:nth-child(1){
@@ -164,10 +165,10 @@ header{
   -moz-transform: rotate(405deg);
   -o-transform: rotate(405deg);
   transform: rotate(405deg);
-  -webkit-transition: 1s ease-in-out;
-  -moz-transition: 1s ease-in-out;
-  -o-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .exit div:nth-child(2){
@@ -181,10 +182,10 @@ header{
   -moz-transform: rotate(-405deg);
   -o-transform: rotate(-405deg);
   transform: rotate(-405deg);
-  -webkit-transition: 1s ease-in-out;
-  -moz-transition: 1s ease-in-out;
-  -o-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 /****************************END of Hambuger Coade **********e****************
@@ -223,7 +224,7 @@ ul .li-items a:hover{
 }
 
 #sub-header{
-  background-color:#181818;
+  background-color:black;
   width: 100%;
   z-index: 1;
 }
@@ -260,35 +261,7 @@ ul .li-items a:hover{
 main{
 	z-index:1;
   text-align: center;
-  background-color: #181818;
-}
-
-#about-wrapper{
-  text-align: center;
-  padding: 25px;
-}
-
-.title{
-  text-align: center;
-  color: #0080ff;
-  padding: 10px;
-  line-height: 20px;
- letter-spacing: 4px;
- font-weight: 400;
-}
-
-.about-content{
-  font-size: 16px;  
-  line-height: 24px;
-  letter-spacing: 1px;
-  font-weight: 100;
-  color: #ccc;
-  padding-bottom: 20px;
-}
-
-.contact{
-  text-decoration: none;
-  color: #0080ff;
+  background-color: black;
 }
 
 #projects-wrapper{
@@ -311,12 +284,12 @@ main{
   color: #ccc;
   font-weight: 400;
   letter-spacing: 2px;
-  border-top:solid 2px white;
+  border-top:solid 3px white;
   transition:.5s;
 }
 
 .border-radius{
-    border-radius: 25px;
+    border-radius: 20px;
     transition: .5s;
 }
 
@@ -344,7 +317,7 @@ img{
   display: block;
   margin: auto;
   margin-top: 15px;
- color: #181818;
+ color: black;
   background: #0080ff;
   width: 200px;
   padding: 10px 0px;
@@ -359,6 +332,30 @@ img{
   transition: .8s;
 }
 
+#about-wrapper{
+  text-align: left;
+  padding: 25px 25px 0px;
+  background-color: black;
+}
+
+.title{
+  text-align: center;
+  color: #0080ff;
+  padding: 10px;
+  line-height: 20px;
+ letter-spacing: 4px;
+ font-weight: 400;
+}
+
+.about-content{
+  font-size: 16px;  
+  line-height: 24px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  color: #ccc;
+  padding-bottom: 10px;
+}
+
 /*********** Mobile Footer Area**********/
 footer{
   width: 100%;
@@ -369,7 +366,7 @@ footer{
   padding: 20px 0px;
   width: 100%;
   color: white;
-  background-color: #181818;
+  background-color: black;
 }
 
 .icon{
@@ -457,7 +454,7 @@ body{
   font-size: 22px;
   letter-spacing: 3px;
   line-height: 30px;
-  padding: 10px 40px 30px;
+  padding: 10px 40px ;
 }
 
 .contact{
