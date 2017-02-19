@@ -28,3 +28,11 @@ $(window).trigger('resize');
 // 			$('.fly-in-text').fadeOut(1500);
 // 		}, 4000);	
 // });
+
+
+
+
+
+
+
+
